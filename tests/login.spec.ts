@@ -10,4 +10,5 @@ test("login page @smoke", async ({ page }) => {
   const loginPage = new LoginPage(page);
   await loginPage.login(testData.login.email, testData.login.password);
   await expect(page.getByText("Logged in as ")).toBeVisible();
+  // Updated login test
 });
