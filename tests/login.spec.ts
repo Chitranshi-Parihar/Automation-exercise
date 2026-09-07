@@ -11,6 +11,7 @@ test("login page @smoke", async ({ page }) => {
   await loginPage.login(testData.login.email, testData.login.password);
   await expect(page.getByText("Logged in as ")).toBeVisible();
   
+  console.log("Login test completed successfully.")
 
 // This change is made to test the GitHub → Webhook → Jenkins automatic pipeline trigger.
 });

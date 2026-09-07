@@ -5,4 +5,6 @@ test("Verify Home Page @smoke", async ({ page }) => {
   await page.goto("/");
   const homePage = new HomePage(page);
   await homePage.verifyHomePage();
+
+  console.log("Home page verification test completed successfully.");
 });

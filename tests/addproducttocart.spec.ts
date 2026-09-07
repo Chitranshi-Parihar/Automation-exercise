@@ -15,4 +15,6 @@ test("Add Product To Cart @sanity", async ({ page }) => {
   await productPage.openProducts();
   await productPage.openProduct();
   await productPage.addToCart();
+
+  console.log("Add Product To Cart test completed successfully.");
 });
