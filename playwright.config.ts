@@ -12,7 +12,7 @@ export default defineConfig({
   use: {
     trace: "on-first-retry",
     baseURL: "https://www.automationexercise.com/",
-    headless: false,
+    headless: true,
   },
   projects: [
     {
